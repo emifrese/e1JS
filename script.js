@@ -23,9 +23,9 @@ const greaterOrEqual = (a, b) => {
 	console.log(message);
 };
 
-greaterOrEqual(1, 2)
-greaterOrEqual(3, 1)
-greaterOrEqual(1, 1)
+greaterOrEqual(1, 2);
+greaterOrEqual(3, 1);
+greaterOrEqual(1, 1);
 
 const isMultipleOf5 = (a) => {
 	let message = `${a} es multiplo de 5`;
@@ -37,9 +37,9 @@ const isMultipleOf5 = (a) => {
 	console.log(message);
 };
 
-isMultipleOf5(5)
-isMultipleOf5(18)
-isMultipleOf5(40)
+isMultipleOf5(5);
+isMultipleOf5(18);
+isMultipleOf5(40);
 
 const previousNumbers = (a) => {
 	for (let i = 0; i < a; i++) {
@@ -47,39 +47,49 @@ const previousNumbers = (a) => {
 	}
 };
 
-previousNumbers(10)
-previousNumbers(1)
-previousNumbers(5)
+previousNumbers(10);
+previousNumbers(1);
+previousNumbers(5);
 
 const palabraNVeces = (palabra, n) => {
 	for (let i = 0; i < n; i++) {
-		console.log(palabra)
+		console.log(palabra);
 	}
-}
+};
 
-palabraNVeces("hola", 1)
-palabraNVeces("chau", 5)
-palabraNVeces("prueba", 10)
+palabraNVeces("hola", 1);
+palabraNVeces("chau", 5);
+palabraNVeces("prueba", 10);
 
 const contenidoArray = (array) => {
 	for (let i = 0; i < array.length; i++) {
-		console.log(array[i])
+		console.log(array[i]);
 	}
-}
+};
 
-contenidoArray([1,2,3,4])
-contenidoArray(["hola", "chau", "prueba"])
-contenidoArray([0, "adios", 2378, "que"])
+contenidoArray([1, 2, 3, 4]);
+contenidoArray(["hola", "chau", "prueba"]);
+contenidoArray([0, "adios", 2378, "que"]);
 
 const todosMenosEl5to = (array) => {
 	for (let i = 0; i < array.length; i++) {
-		if(i === 4){
+		if (i === 4) {
 			continue;
 		}
-		console.log(array[i])
+		console.log(array[i]);
 	}
-}
+};
 
-todosMenosEl5to([1,2,3,4,5,6,7,8,9,10])
-todosMenosEl5to([4,7,36,45,73,212,452,234,23,42])
-todosMenosEl5to([1,1,1,1,5,1,1,1,1,1])
+todosMenosEl5to([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+todosMenosEl5to([4, 7, 36, 45, 73, 212, 452, 234, 23, 42]);
+todosMenosEl5to([1, 1, 1, 1, 5, 1, 1, 1, 1, 1]);
+
+const multiplicaPorN = (array, n = 1) => {
+	for (let number of array) {
+		console.log(number * n);
+	}
+};
+
+multiplicaPorN([1, 2, 3], 5);
+multiplicaPorN([4, 5, 6], 2);
+multiplicaPorN([7, 8, 9], 10);
